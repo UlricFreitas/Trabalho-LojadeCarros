@@ -99,5 +99,6 @@ Begin
  writeln('Valor total do Kwid com opcional 3: R$ 70.450');
  writeln('Valor total do Panamera com opcional 4: R$ 660.100');
  writeln;
-
+ writeln('Lucro total da loja com os quatro carros + opcionais R$ 869.350');
+ 
 End.

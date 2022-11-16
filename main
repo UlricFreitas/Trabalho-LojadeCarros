@@ -1,0 +1,101 @@
+Program Pzim ;
+type carro = record
+ marca: string;
+ modelo: string;
+ valorC: string;
+ valorV: string;
+ opcional1: string;
+ opcional2: string;
+ opcional3: string;
+ opcional4: string;
+end;
+ 
+var Carros : array [1..4] of carro;
+continuar: char;
+
+Begin
+ 
+ Carros[1].marca := 'Fiat';
+ Carros[1].modelo := 'Uno';
+ Carros[1].valorC := 'R$ 45.000';
+ Carros[1].valorV := 'R$ 50.000';
+ Carros[1].opcional1 := 'R$ 3.000';
+ Carros[1].opcional2 := 'R$ 800';
+ Carros[1].opcional3 := 'R$ 450';
+ Carros[1].opcional4 := 'R$ 100';
+ 
+ Carros[2].marca := 'Chevrolet';
+ Carros[2].modelo := 'Onix';
+ Carros[2].valorC := 'R$ 80.000';
+ Carros[2].valorV := 'R$ 85.000';
+ Carros[2].opcional1 := 'R$ 3.000';
+ Carros[2].opcional2 := 'R$ 800';
+ Carros[2].opcional3 := 'R$ 450';
+ Carros[2].opcional4 := 'R$ 100';
+ 
+ Carros[3].marca := 'Renault';
+ Carros[3].modelo := 'Kwid';
+ Carros[3].valorC := 'R$ 65.000';
+ Carros[3].valorV := 'R$ 70.000';
+ Carros[3].opcional1 := 'R$ 3.000';
+ Carros[3].opcional2 := 'R$ 800';
+ Carros[3].opcional3 := 'R$ 450';
+ Carros[3].opcional4 := 'R$ 100';
+ 
+ Carros[4].marca := 'Porsche';
+ Carros[4].modelo := 'Panamera';
+ Carros[4].valorC := 'R$ 655.000';
+ Carros[4].valorV := 'R$ 660.000';
+ Carros[3].opcional1 := 'R$ 3.000';
+ Carros[3].opcional2 := 'R$ 800';
+ Carros[3].opcional3 := 'R$ 450';
+ Carros[3].opcional4 := 'R$ 100';
+ 
+ writeln('Bem vindo à GMG, vendemos carros usados por um bom preço, confira algumas de nossas opções: ');
+ delay(3500);
+ clrscr;
+ 
+ writeln ('Marca do carro: ', Carros[1].marca);
+ writeln ('Modelo do carro: ', Carros[1].modelo);
+ writeln ('Valor de compra do carro: ', Carros[1].valorC);
+ writeln ('Valor de venda do carro: ', Carros[1].valorV);
+ writeln;
+ 
+ writeln ('Marca do carro: ', Carros[2].marca);
+ writeln ('Modelo do carro: ', Carros[2].modelo);
+ writeln ('Valor de compra do carro: ', Carros[2].valorC);
+ writeln ('Valor de venda do carro: ', Carros[2].valorV);
+ writeln;
+ 
+ writeln ('Marca do carro: ', Carros[3].marca);
+ writeln ('Modelo do carro: ', Carros[3].modelo);
+ writeln ('Valor de compra do carro: ', Carros[3].valorC);
+ writeln ('Valor de venda do carro: ', Carros[3].valorV);
+ writeln;
+ 
+ writeln ('Marca do carro: ', Carros[4].marca);
+ writeln ('Modelo do carro: ', Carros[4].modelo);
+ writeln ('Valor de compra do carro: ', Carros[4].valorC);
+ writeln ('Valor de venda do carro: ', Carros[4].valorV);
+ writeln;
+ 
+ writeln('Opcionais: ');
+ writeln;
+ writeln('Pintura: ', Carros[1].opcional1);  
+ writeln('Suspensão: ', Carros[1].opcional2);
+ writeln('Freio: ', Carros[1].opcional3);
+ writeln('Farol: ', Carros[1].opcional4);
+ writeln;
+ 
+ writeln('Tecle "S" para prosseguir ao relatório de lucro da loja');
+ read(continuar);
+ continuar:=('S');
+ clrscr;
+ 
+ writeln('------------------------------------------------- Relatório de lucros --------------------------------------------------');
+ writeln;
+ writeln('Valor total do Uno com opcional 1: R$ 53.000');
+ writeln('Valor total do Onix com opcional 2: R$ 85.800');
+ writeln('Valor total do Kwid com opcional 3: R$ 70.450');
+ writeln('Valor total do Panamera com opcional 4: R$ 660.100');
+ writeln;
